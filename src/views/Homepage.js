@@ -25,7 +25,7 @@ const Homepage = () => {
                 if(LEDValue == 3 && data.led == 1){
                     setLoading(false)
                 }
-                if(data.led == 2){
+                if(data.led == 2 && data.button == 1){
                     updateButtonById(USER_ID,0)
                 }
                 setLEDValue(Number(data.led))
